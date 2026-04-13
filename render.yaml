@@ -1,9 +1,10 @@
 services:
   - type: web
-    name: url-metadata-extractor
-    runtime: node
-    buildCommand: npm install
-    startCommand: node index.js
-    envVars:
-      - key: NODE_ENV
-        value: production
+      plan: free
+          name: url-metadata-extractor
+              runtime: node
+                  buildCommand: npm install
+                      startCommand: node index.js
+                          envVars:
+                                - key: NODE_ENV
+                                        value: production
